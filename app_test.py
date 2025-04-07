@@ -2,7 +2,7 @@ import streamlit as st
 from ultralytics import YOLO
 import cv2
 import numpy as np
-from utils import analyze_test_result
+from .utils import analyze_test_result
 from PIL import Image
 
 # Load model

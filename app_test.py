@@ -15,6 +15,9 @@ if uploaded_file is not None:
     # Read image
     file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
     image = cv2.imdecode(file_bytes, 1)
+    
+    st.image(image, caption="Uploaded Test Kit Image", channels="BGR")
+
 
     # Run detection
     results = model(image, conf=0.25)

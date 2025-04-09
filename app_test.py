@@ -8,7 +8,7 @@ from PIL import Image
 # Load model
 model = YOLO("best.pt")
 
-st.title("Home Test Kit Analyzer 🧪")
+st.title("Home Test Kit Analyzer")
 uploaded_file = st.file_uploader("Upload a test kit image", type=["jpg", "png", "jpeg"])
 
 if uploaded_file is not None:

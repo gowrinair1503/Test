@@ -17,6 +17,10 @@ if uploaded_file is not None:
     image = cv2.imdecode(file_bytes, 1)
     
     st.image(image, caption="Uploaded Test Kit Image", channels="BGR")
+    print()
+    print()
+    print()
+    print()
 
 
     # Run detection

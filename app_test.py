@@ -33,7 +33,7 @@ if uploaded_file is not None:
             st.image(test_crop, caption="Cropped Test Area", channels="BGR")
         else:
             test_type = label
-            st.markdown(f"### 🧾 Detected Test Type: `{label}` (Confidence: {conf:.2f})")
+            st.markdown(f"### 🧾 Detected Test Type: `{label}`")
 
     if test_type != "Unknown":
         result = analyze_test_result("test_crop.jpg", test_type)
